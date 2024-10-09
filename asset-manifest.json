@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/peng/static/css/main.a11938e3.css",
+    "main.js": "/peng/static/js/main.d08969e0.js",
+    "static/js/453.c6d59cad.chunk.js": "/peng/static/js/453.c6d59cad.chunk.js",
+    "index.html": "/peng/index.html",
+    "main.a11938e3.css.map": "/peng/static/css/main.a11938e3.css.map",
+    "main.d08969e0.js.map": "/peng/static/js/main.d08969e0.js.map",
+    "453.c6d59cad.chunk.js.map": "/peng/static/js/453.c6d59cad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a11938e3.css",
+    "static/js/main.d08969e0.js"
+  ]
+}
