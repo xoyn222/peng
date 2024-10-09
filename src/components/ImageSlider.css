@@ -1,0 +1,78 @@
+/* src/components/ImageSlider.css */
+.slider-container {
+    position: relative;
+    width: 100vw;  /* Полная ширина экрана */
+    height: 100vh; /* Полная высота экрана */
+    overflow: hidden;
+    background-color: black; /* Фон черный для полей */
+    display: flex; /* Используем flexbox для центровки */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.image-wrapper {
+    position: relative; /* Для кнопок и текста */
+    width: 100%; /* Ширина обертки равна ширине контейнера */
+    height: 100%; /* Высота обертки равна высоте контейнера */
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем изображение по горизонтали */
+    align-items: center; /* Центрируем изображение по вертикали */
+}
+
+.slider-image {
+    height: 100%;  /* Задаем высоту 100% для заполнения контейнера */
+    width: auto;   /* Ширина автоматически подстраивается для сохранения пропорций */
+    object-fit: cover; /* Изображение заполняет контейнер, обрезая лишнее */
+}
+
+.slider-caption {
+    position: absolute; /* Позиционируем текст поверх изображения */
+    top: 80px; /* Отступ от верхней границы */
+    left: 15px; /* Отступ от левой границы */
+    transform: none; /* Отключаем центрирование текста */
+    color: white; /* Цвет текста */
+    font-size: 20px; /* Размер шрифта */
+    text-align: left; /* Выравнивание текста по левому краю */
+    padding: 10px; /* Отступ вокруг текста */
+    max-width: 300px;
+    text-size-adjust: 100%;
+    display: block;
+    z-index: 1000;
+
+}
+
+.slider-caption a{
+    color: white; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем рамку */
+    color: white; /* Цвет текста кнопки */
+    font-size: 1.5rem; /* Уменьшенный размер шрифта для более тонкой кнопки */
+    cursor: pointer;
+    z-index: 10;
+    padding: 5px; /* Уменьшенный отступ для кнопки */
+    opacity: 0; /* Скрываем кнопки по умолчанию */
+    transition: opacity 0.3s; /* Плавный переход для изменения прозрачности */
+}
+
+.image-wrapper:hover .slider-button {
+    opacity: 1; /* Показываем кнопки при наведении на обертку изображения */
+}
+
+.slider-button.left {
+    left: 10px;
+}
+
+.slider-button.right {
+    right: 10px;
+}
+
+img {
+    pointer-events: none;
+}

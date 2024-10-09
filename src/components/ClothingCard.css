@@ -1,0 +1,39 @@
+/* src/components/ClothingCard.css */
+.clothing-card {
+    position: relative;
+    width: 100vw;  /* Полная ширина экрана */
+    height: 100vh; /* Полная высота экрана */
+    overflow: hidden;
+    background-color: black; /* Фон черный для полей */
+    display: flex; /* Используем flexbox для выравнивания содержимого */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.image-wrapper {
+    position: relative; /* Для кнопок и текста */
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем изображение по горизонтали */
+    align-items: center; /* Центрируем изображение по вертикали */
+}
+
+.clothing-image {
+    height: 100%;  /* Задаем высоту 100% для заполнения контейнера */
+    width: auto;   /* Ширина автоматически подстраивается для сохранения пропорций */
+    object-fit: cover; /* Изображение заполняет контейнер, обрезая лишнее */
+}
+
+.description {
+    position: absolute; /* Позиционируем текст поверх изображения */
+    top: 80px; /* Отступ от верхней границы */
+    left: 15px; /* Отступ от левой границы */
+    transform: none; /* Отключаем центрирование текста */
+    color: white; /* Цвет текста */
+    font-size: 20px; /* Размер шрифта */
+    text-align: left; /* Выравнивание текста по левому краю */
+    padding: 10px; /* Отступ вокруг текста */
+    max-width: 300px;
+    text-size-adjust: 100%;
+    display: block;
+    z-index: 1000;
+}

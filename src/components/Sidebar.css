@@ -1,0 +1,37 @@
+.sidebar {
+    max-width: 100%;
+    text-size-adjust: 100%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 18px; /* Фиксированный размер шрифта */
+    z-index: 1000;
+}
+
+.info {
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Информация остаётся слева */
+    text-align: left;
+    font-size: 18px; /* Фиксируем размер шрифта */
+}
+
+.info a {
+
+    color: white; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: block; /* Делаем каждую ссылку отдельным блоком */
+    margin-bottom: 5px; /* Отступ между ссылками */
+}
+
+.date {
+    position: absolute;
+    top: 20px;
+    left: 50%; /* Начинаем с центра экрана */
+    text-align: left;
+    transform: translateX(0); /* Оставляем текст на месте */
+    white-space: nowrap; /* Не разрешаем перенос текста */
+    font-size: 18px; /* Фиксированный размер шрифта */
+}
