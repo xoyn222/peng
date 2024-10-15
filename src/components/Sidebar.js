@@ -1,3 +1,4 @@
+// src/components/Sidebar.js
 import React, { useState, useEffect } from 'react';
 import './Sidebar.css';
 
@@ -29,7 +30,7 @@ const Sidebar = () => {
             hour: '2-digit',
             minute: '2-digit',
             second: '2-digit',
-            hour12: false, // Отключаем 12-часовой формат, чтобы было 24-часовое время
+            hour12: false, // Отключаем 12-часовой формат
         });
     };
 

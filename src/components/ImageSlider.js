@@ -1,14 +1,15 @@
 // src/components/ImageSlider.js
 import React, { useState, useEffect } from 'react';
 import './ImageSlider.css';
+import {assets} from "../assets/assets.js";
 
 const images = [
-    { src: '/images/IMG_1810.JPG', caption: 'девушка в <a href="/clothing/3">Худи Пенг «Ахуенный тренд»</a>'},
-    { src: '/images/IMG_2554.JPG', caption: 'девушка в <a href="/clothing/2">Худи Пенг «Ахуенный тренд»</a>'},
-    { src: '/images/IMG_2038.JPG', caption: 'девушка в <a href="/clothing/6">Худи Пенг «Ахуенный тренд»</a>'},
-    { src: '/images/IMG_2102.JPG', caption: 'девушка в <a href="/clothing/4">Худи Пенг «Ахуенный тренд»</a>'},
-    { src: '/images/IMG_2486.JPG', caption: 'девушка в <a href="/clothing/5">Худи Пенг «Ахуенный тренд»</a>'},
-    { src: '/images/IMG_2218.JPG', caption: 'девушка в <a href="/clothing/1">Худи Пенг «Ахуенный тренд»</a>'},
+    { src: assets.image1, caption: 'девушка в <a href="/clothing/3">Худи Пенг «Ахуенный тренд»</a>'},
+    { src: assets.image2, caption: 'девушка в <a href="/clothing/2">Худи Пенг «Ахуенный тренд»</a>'},
+    { src: assets.image3, caption: 'девушка в <a href="/clothing/6">Худи Пенг «Ахуенный тренд»</a>'},
+    { src: assets.image4, caption: 'девушка в <a href="/clothing/4">Худи Пенг «Ахуенный тренд»</a>'},
+    { src: assets.image5, caption: 'девушка в <a href="/clothing/5">Худи Пенг «Ахуенный тренд»</a>'},
+    { src: assets.image6, caption: 'девушка в <a href="/clothing/1">Худи Пенг «Ахуенный тренд»</a>'},
 ];
 
 const ImageSlider = () => {
