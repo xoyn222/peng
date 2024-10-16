@@ -40,27 +40,6 @@
     text-decoration: none;
 }
 
-.slider-button {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 1.5vw;
-    cursor: pointer;
-    z-index: 10;
-    padding: 1vw;
-    transition: opacity 0.3s;
-}
-
-.image-wrapper:hover .slider-button {
-    opacity: 1;
-}
-
-.slider-button.left {
-    left: 0;
-}
 
 .slider-button.right {
     right: 0;

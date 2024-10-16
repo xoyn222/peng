@@ -8,6 +8,7 @@ import imageRokiiPurp from './rokii_purp.jpg';
 import imagePodsharil from './podsharil.jpg';
 import image2YK from './2YK.jpg';
 import imageTrend from './trend.jpg';
+import imageRokiiBlue from './rokii_blue.jpg';
 
 export const assets = {
     image1,
@@ -17,6 +18,7 @@ export const assets = {
     image5,
     image6,
     imageRokiiPurp,
+    imageRokiiBlue,
     imagePodsharil,
     image2YK,
     imageTrend,

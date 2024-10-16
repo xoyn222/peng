@@ -1,0 +1,20 @@
+.slider-buttons {
+    position: fixed;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.1vw;
+    cursor: pointer;
+    z-index: 10;
+    padding: 1vw;
+    transition: opacity 0.3s;
+}
+
+.slider-buttons.left {
+    left: 48vh;
+}
+
+.slider-buttons.right {
+    right: 48vh;
+}
