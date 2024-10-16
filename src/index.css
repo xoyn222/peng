@@ -1,24 +1,23 @@
 * {
 
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 html, body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden; /* Отключаем прокрутку */
-  font-size: 16px; /* Устанавливаем базовый размер шрифта */
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px;
 }
 
-/* Устанавливаем фиксированные размеры для шрифта */
 @media screen {
-  .sidebar,
-  .info,
-  .date {
-    font-size: 18px; /* Фиксированный размер шрифта в px */
-  }
+    .sidebar,
+    .info,
+    .date {
+        font-size: 18px;
+    }
 }

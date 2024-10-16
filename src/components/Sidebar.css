@@ -1,37 +1,64 @@
 .sidebar {
+    left: 1vw;
     max-width: 100%;
     text-size-adjust: 100%;
     display: block;
     position: absolute;
     width: 100%;
     color: white;
-    font-size: 18px; /* Фиксированный размер шрифта */
+    font-size: 1vw;
     z-index: 1000;
 }
 
 .info {
-    padding: 5px;
+    padding: 1vw;
     position: absolute;
-    top: 20px;
-    left: 20px; /* Информация остаётся слева */
+    top: 1.5vh;
     text-align: left;
-    font-size: 18px; /* Фиксируем размер шрифта */
+    font-size: 1.2vw;
 }
 
 .info a {
-
-    color: white; /* Цвет ссылок */
-    text-decoration: none; /* Убираем подчеркивание */
-    display: block; /* Делаем каждую ссылку отдельным блоком */
-    margin-bottom: 5px; /* Отступ между ссылками */
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1vh;
 }
 
 .date {
     position: absolute;
-    top: 20px;
-    left: 50%; /* Начинаем с центра экрана */
+    top: 3vh;
+    left: 50%;
     text-align: left;
-    transform: translateX(0); /* Оставляем текст на месте */
-    white-space: nowrap; /* Не разрешаем перенос текста */
-    font-size: 18px; /* Фиксированный размер шрифта */
+    font-size: 0.9vw;
+}
+
+@media (min-width: 1080px) {
+    .sidebar {
+        font-size: 0.9vw;
+    }
+
+    .info {
+        font-size: 0.9vw;
+    }
+}
+
+@media (min-width: 2560px) {
+    .sidebar {
+        font-size: 0.9vw;
+    }
+
+    .info {
+        font-size: 0.9vw;
+    }
+}
+
+@media (min-width: 3840px) {
+    .sidebar {
+        font-size: 0.9vw;
+    }
+
+    .info {
+        font-size: 0.9vw;
+    }
 }

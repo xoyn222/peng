@@ -1,20 +1,19 @@
-/* src/App.css */
 .App {
-  height: 100vh;
-  overflow: hidden;
-  background-color: black;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 * {
-  -webkit-text-size-adjust: 100%; /* Отключаем изменение размера текста на мобильных устройствах */
-  text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; /* Отключаем изменение размера текста на мобильных устройствах */
+    text-size-adjust: 100%;
 }
 

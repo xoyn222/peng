@@ -1,39 +1,107 @@
-/* src/components/ClothingCard.css */
 .clothing-card {
     position: relative;
-    width: 100vw;  /* Полная ширина экрана */
-    height: 100vh; /* Полная высота экрана */
-    overflow: hidden;
-    background-color: black; /* Фон черный для полей */
-    display: flex; /* Используем flexbox для выравнивания содержимого */
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: black;
+
 }
 
 .image-wrapper {
-    position: relative; /* Для кнопок и текста */
-    display: flex; /* Используем flexbox для центрирования */
-    justify-content: center; /* Центрируем изображение по горизонтали */
-    align-items: center; /* Центрируем изображение по вертикали */
+    position: relative;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
 
 .clothing-image {
-    height: 100%;  /* Задаем высоту 100% для заполнения контейнера */
-    width: auto;   /* Ширина автоматически подстраивается для сохранения пропорций */
-    object-fit: cover; /* Изображение заполняет контейнер, обрезая лишнее */
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    background-color: black;
 }
 
 .description {
-    position: absolute; /* Позиционируем текст поверх изображения */
-    top: 80px; /* Отступ от верхней границы */
-    left: 15px; /* Отступ от левой границы */
-    transform: none; /* Отключаем центрирование текста */
-    color: white; /* Цвет текста */
-    font-size: 20px; /* Размер шрифта */
-    text-align: left; /* Выравнивание текста по левому краю */
-    padding: 10px; /* Отступ вокруг текста */
-    max-width: 300px;
-    text-size-adjust: 100%;
-    display: block;
-    z-index: 1000;
+    position: absolute;
+    left: 1vw;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 20vw;
+    padding: 1vw;
+    color: white;
+    line-height: 1.5;
+    z-index: 100;
+}
+
+.description .name {
+    font-size: 1vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
+.description .size,
+.description .color,
+.description .material {
+    margin-top: 1.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.description div {
+    margin-bottom: 0.5vw;
+}
+
+.description div:last-child {
+    margin-bottom: 0;
+}
+
+.description .telegram-link a {
+    color: white;
+}
+
+@media (min-width: 3840px) {
+    .description {
+        font-size: 0.9vw;
+    }
+
+    .description .name {
+        font-size: 0.9vw;
+    }
+}
+
+@media (min-width: 1920px) {
+    .description {
+        font-size: 0.9vw;
+    }
+
+    .description .name {
+        font-size: 0.9vw;
+    }
+}
+
+@media (min-width: 1080px) {
+    .description {
+        font-size: 0.9vw;
+    }
+
+    .description .name {
+        font-size: 0.9vw;
+    }
+}
+
+@media (min-width: 640px) {
+    .description {
+        font-size: 0.9vw;
+    }
+
+    .description .name {
+        font-size: 0.9vw;
+    }
 }

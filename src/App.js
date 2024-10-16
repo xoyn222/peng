@@ -1,6 +1,5 @@
-// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import ImageSlider from './components/ImageSlider';
 import ClothingCard from './components/ClothingCard';
@@ -11,14 +10,17 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <Sidebar />
+                <Sidebar/>
                 <Routes>
-                    <Route path="/" element={<ImageSlider />} />
+                    <Route path="/" element={<Navigate to="/peng" replace/>}/>
+
+                    <Route path="/peng" element={<ImageSlider/>}/>
+
                     {ClotheData.map(item => (
                         <Route
                             key={item.id}
                             path={`/clothing/${item.id}`}
-                            element={<ClothingCard clothing={item} />}
+                            element={<ClothingCard clothing={item}/>}
                         />
                     ))}
                 </Routes>

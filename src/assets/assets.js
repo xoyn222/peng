@@ -1,4 +1,3 @@
-// src/assets.js
 import image1 from './IMG_1810.JPG';
 import image2 from './IMG_2554.JPG';
 import image3 from './IMG_2038.JPG';
