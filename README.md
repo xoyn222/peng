@@ -1,4 +1,4 @@
-peng shop (pet project)
+peng site (pet project)
 
 React JS
 (API, Navigation)
