@@ -10,7 +10,7 @@ const ClotheData = [
         colors: ["Небесно-голубой", "Серо-фиолетовый"],
         material: "Хлопок",
         note: "Всего пара единиц на размер",
-        tg: "t.me/peng0256information"
+        tg: "https://t.me/peng0256information"
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const ClotheData = [
         colors: ["Небесно-голубой", "Серо-фиолетовый"],
         material: "Хлопок",
         note: "Всего пара единиц на размер",
-        tg: "t.me/peng0256information"
+        tg: "https://t.me/peng0256information"
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ const ClotheData = [
         sizes: ["176 44", "182 46", "188 48", "194 50"],
         colors: ["Графитно-чёрный", "Молочно-белый", "Орехово-коричневый"],
         material: "Флис, кожа",
-        tg: "t.me/peng0256information"
+        tg: "https://t.me/peng0256information"
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ const ClotheData = [
         sizes: ["176 44", "182 46", "188 48", "194 50"],
         colors: ["Графитно-чёрный", "Молочно-белый", "Орехово-коричневый"],
         material: "Флис, кожа",
-        tg: "t.me/peng0256information"
+        tg: "https://t.me/peng0256information"
     },
 ];
 

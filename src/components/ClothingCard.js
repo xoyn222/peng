@@ -20,18 +20,29 @@ const ClothingCard = ({ clothing }) => {
             <div className="description">
                 <div className="name">{clothing.name}</div>
                 <div>{clothing.description}</div>
+
                 {clothing.sizes && (
                     <div>
                         <div className="size">Размеры:</div>
-                        <div>{clothing.sizes.join(', ')}</div>
+                        <div className="size-list">
+                            {clothing.sizes.map((size, index) => (
+                                <div key={index} className="size-item">{size}</div>
+                            ))}
+                        </div>
                     </div>
                 )}
+
                 {clothing.colors && (
                     <div>
                         <div className="color">Цвет:</div>
-                        <div>{clothing.colors.join(', ')}</div>
+                        <div className="color-list">
+                            {clothing.colors.map((color, index) => (
+                                <div key={index} className="color-item">{color}</div>
+                            ))}
+                        </div>
                     </div>
                 )}
+
                 {clothing.material && (
                     <div>
                         <div className="material">Материал:</div>
@@ -39,11 +50,15 @@ const ClothingCard = ({ clothing }) => {
                     </div>
                 )}
                 {clothing.note && <div>{clothing.note}</div>}
+                {clothing.tg && (
+                    <div className="telegram-link">
+                        <a href={clothing.tg} target="_blank" rel="noopener noreferrer"> Связаться в Telegram</a>
+                    </div>
+                )}
             </div>
 
-            <div className="image-wrapper">
-                    <img src={images[currentImageIndex]} alt={clothing.name} className="clothing-image" />
-
+            <div className="card-wrapper">
+                <img src={images[currentImageIndex]} alt={clothing.name} className="clothing-image" />
                 <SliderButtons prevSlide={prevSlide} nextSlide={nextSlide} />
             </div>
         </div>

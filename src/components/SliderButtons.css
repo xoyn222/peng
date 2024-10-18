@@ -6,9 +6,10 @@
     color: white;
     font-size: 1.1vw;
     cursor: pointer;
-    z-index: 10;
+    z-index: 11000;
     padding: 1vw;
     transition: opacity 0.3s;
+
 }
 
 .slider-buttons.left {

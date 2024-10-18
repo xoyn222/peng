@@ -9,6 +9,10 @@ const images = [
     {src: assets.image4, caption: 'девушка в <a href="/clothing/4">Худи Пенг «Ахуенный тренд»</a>'},
     {src: assets.image5, caption: 'девушка в <a href="/clothing/5">Худи Пенг «Ахуенный тренд»</a>'},
     {src: assets.image6, caption: 'девушка в <a href="/clothing/1">Худи Пенг «Ахуенный тренд»</a>'},
+    {src: assets.image7, caption: 'девушка в <a href="/clothing/1">Худи Пенг «Ахуенный тренд»</a>'},
+    {src: assets.image8, caption: 'девушка в <a href="/clothing/1">Худи Пенг «Ахуенный тренд»</a>'},
+    {src: assets.image11, caption: 'девушка в <a href="/clothing/1">Худи Пенг «Ахуенный тренд»</a>'},
+    {src: assets.image12, caption: 'девушка в <a href="/clothing/1">Худи Пенг «Ахуенный тренд»</a>'},
 ];
 
 const ImageSlider = () => {
@@ -30,7 +34,7 @@ const ImageSlider = () => {
     return (
         <div className="slider-container">
             <div className="image-wrapper">
-                <img src={images[currentIndex].src} alt={`Slide ${currentIndex + 1}`} className="slider-image"/>
+                <img src={images[currentIndex].src} alt="" className="slider-image"/>
                 <button className="slider-button left" onClick={prevSlide}>❮</button>
                 <button className="slider-button right" onClick={nextSlide}>❯</button>
             </div>
