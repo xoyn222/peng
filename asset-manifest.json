@@ -1,25 +1,30 @@
 {
   "files": {
-    "main.css": "/peng/static/css/main.095a5e5d.css",
-    "main.js": "/peng/static/js/main.c80b77ab.js",
+    "main.css": "/peng/static/css/main.cbf7276c.css",
+    "main.js": "/peng/static/js/main.e46b893f.js",
     "static/js/453.c6d59cad.chunk.js": "/peng/static/js/453.c6d59cad.chunk.js",
+    "static/media/jpg": "/peng/static/media/a248cc845203fd21d0a6c24c31135b6b.3d044ed00ae1bf25cbd2.jpg",
     "static/media/IMG_2102.JPG": "/peng/static/media/IMG_2102.08ab71613424369ba4ea.JPG",
     "static/media/IMG_1810.JPG": "/peng/static/media/IMG_1810.2505191b72645080e6b5.JPG",
     "static/media/IMG_2486.JPG": "/peng/static/media/IMG_2486.c0cb8466630369552053.JPG",
+    "static/media/San Francisco (2560x1440).jpg": "/peng/static/media/San Francisco (2560x1440).edadbfdb7703c43e3d5e.jpg",
     "static/media/IMG_2038.JPG": "/peng/static/media/IMG_2038.1df42e65d43243cd70cc.JPG",
     "static/media/IMG_2218.JPG": "/peng/static/media/IMG_2218.c5906ec3a17842b0bca7.JPG",
     "static/media/IMG_2554.JPG": "/peng/static/media/IMG_2554.0b26fd11088c9bc5cbc7.JPG",
     "static/media/2YK.jpg": "/peng/static/media/2YK.9663ba6a0014b472a2a2.jpg",
     "static/media/rokii_purp.jpg": "/peng/static/media/rokii_purp.235f66d8fe2032f6bca5.jpg",
+    "static/media/rokii_blue.jpg": "/peng/static/media/rokii_blue.894aca54b37742020304.jpg",
     "static/media/trend.jpg": "/peng/static/media/trend.f2c69a66a2d4bbd9d78c.jpg",
     "static/media/podsharil.jpg": "/peng/static/media/podsharil.aaba7085a396789780c2.jpg",
+    "static/media/IMG_5372.JPG": "/peng/static/media/IMG_5372.2ba96970dd150ef0fa65.JPG",
+    "static/media/IMG_5373.JPG": "/peng/static/media/IMG_5373.c3b0e25a7250b2e70811.JPG",
     "index.html": "/peng/index.html",
-    "main.095a5e5d.css.map": "/peng/static/css/main.095a5e5d.css.map",
-    "main.c80b77ab.js.map": "/peng/static/js/main.c80b77ab.js.map",
+    "main.cbf7276c.css.map": "/peng/static/css/main.cbf7276c.css.map",
+    "main.e46b893f.js.map": "/peng/static/js/main.e46b893f.js.map",
     "453.c6d59cad.chunk.js.map": "/peng/static/js/453.c6d59cad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.095a5e5d.css",
-    "static/js/main.c80b77ab.js"
+    "static/css/main.cbf7276c.css",
+    "static/js/main.e46b893f.js"
   ]
 }
