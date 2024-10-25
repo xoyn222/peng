@@ -3,9 +3,7 @@
     text-size-adjust: 100%;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+
 
 html, body {
     background-color: black;
