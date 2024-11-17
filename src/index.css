@@ -4,15 +4,13 @@
 }
 
 
-
 html, body {
-    background-color: black;
+    background-color: white;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
     overflow-x: hidden; /* Убираем горизонтальный скролл */
-    overflow-y: hidden; /* Убираем вертикальный скролл */
 }
 

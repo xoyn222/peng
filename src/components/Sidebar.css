@@ -3,9 +3,9 @@
     max-width: 100%;
     text-size-adjust: 100%;
     display: block;
-    position: absolute;
+    position: relative;
     width: 100%;
-    color: white;
+    color: black;
     font-size: 1vw;
     z-index: 1000;
 }
@@ -18,7 +18,7 @@
 }
 
 .info a {
-    color: white;
+    color: black;
     text-decoration: none;
     display: block;
     margin-bottom: 1vh;

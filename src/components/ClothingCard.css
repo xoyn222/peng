@@ -5,28 +5,29 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
-    background-color: black;
+    background-color: white;
 
 }
 
 .card-wrapper {
     position: relative;
-    width: 60%;
+
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: white;
 }
 
 .clothing-image {
     height: 100%;
     width: auto;
     object-fit: cover;
-    background-color: black;
+    background-color: white;
 }
 
 .description {
+    color: black;
     position: absolute;
     left: 1vw;
     top: 10vh;
@@ -34,7 +35,6 @@
     flex-direction: column;
     justify-content: center;
     max-width: 20vw;
-    color: white;
     line-height: 1.5;
     z-index: 100;
 }
@@ -62,7 +62,7 @@
 }
 
 .description .telegram-link a {
-    color: white;
+    color: black;
 }
 
 

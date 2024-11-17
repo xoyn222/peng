@@ -13,9 +13,17 @@ import imageRokiiPurp from './rokii_purp.jpg';
 import imagePodsharil from './podsharil.jpg';
 import image2YK from './2YK.jpg';
 import imageTrend from './trend.jpg';
+import blackYBWWBackF2 from './BlackYBWWBackF2.png';
+import blackYBWWFontF2 from './BlackYBWWFrontF2.png';
+import pengDenielsFront from './PengDenielsFront.png';
+import whiteYBWWFront from './WhiteYBWWFront.png';
 import imageRokiiBlue from './rokii_blue.jpg';
 
 export const assets = {
+    whiteYBWWFront,
+    blackYBWWBackF2,
+    pengDenielsFront,
+    blackYBWWFontF2,
     image1,
     image2,
     image3,
