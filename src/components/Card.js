@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';  // Импортируем Link
 import './Card.css';
 
-const Card = ({ image, name, status, id }) => {
+const Card = ({ image, name, id }) => {
     return (
         <Link to={`/clothing/${id}`} className="product-card"> {/* Добавляем Link и передаем ID */}
             <div className="product-image">
@@ -10,7 +10,6 @@ const Card = ({ image, name, status, id }) => {
             </div>
             <div className="product-info">
                 <p className="product-name">{name}</p>
-                <p className="product-status">{status}</p>
             </div>
         </Link>
     );

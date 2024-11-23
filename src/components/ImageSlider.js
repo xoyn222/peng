@@ -1,21 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './ImageSlider.css';
 import images from './imageData';
 
 const ImageSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const timerRef = useRef(null);
+
+    const startAutoSlide = () => {
+        timerRef.current = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 4000);
+    };
+
+    const resetAutoSlide = () => {
+        if (timerRef.current) {
+            clearInterval(timerRef.current);
+        }
+        startAutoSlide();
+    };
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        resetAutoSlide();
     };
 
     const prevSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+        resetAutoSlide();
     };
 
     useEffect(() => {
-        const interval = setInterval(nextSlide, 5000);
-        return () => clearInterval(interval);
+        startAutoSlide();
+        return () => {
+            if (timerRef.current) {
+                clearInterval(timerRef.current);
+            }
+        };
     }, []);
 
     return (

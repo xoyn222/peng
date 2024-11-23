@@ -61,3 +61,16 @@
         font-size: 0.9vw;
     }
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        font-size: 3vw;
+    }
+
+    .info {
+        font-size: 3vw;
+    }
+    .date{
+        font-size: 3vw;
+    }
+}
