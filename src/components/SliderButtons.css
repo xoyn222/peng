@@ -3,7 +3,7 @@
     top: 50%;
     background-color: transparent;
     border: none;
-    color: white;
+    color: black;
     font-size: 1.1vw;
     cursor: pointer;
     z-index: 11000;
@@ -13,9 +13,9 @@
 }
 
 .slider-buttons.left {
-    left: 48vh;
+    left: 50vh;
 }
 
 .slider-buttons.right {
-    right: 48vh;
+    right: 50vh;
 }

@@ -9,6 +9,7 @@
 }
 
 .description {
+    font-size: 1vw;
     color: black;
     position: absolute;
     left: 1vw;
@@ -43,6 +44,17 @@
     margin-bottom: 0;
 }
 
+.status-button {
+    display: inline-block;
+    background-color: #ddd;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+
 @media (max-width: 768px) {
     /* Основной стиль для карточки */
     .clothing-card {
@@ -73,6 +85,7 @@
     /* Блок описания */
     .description {
         max-width: 100%;
+        top: 5vh;
         position: relative;
         flex: 1; /* Займёт половину ширины */
         text-align: left;
@@ -153,5 +166,25 @@
 
     .status-button {
         font-size: 0.9rem;
+    }
+    .dots-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        gap: 8px; /* Расстояние между точками */
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .dot.active {
+        background-color: #333; /* Цвет активной точки */
     }
 }

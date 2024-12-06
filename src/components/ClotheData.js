@@ -4,7 +4,7 @@ const ClotheData = [
     {
         id: 1,
         name: "Что то там в рот вас Пенг Женская ",
-        imgdata: [assets.blackYBWWFontF2],
+        imgdata: [assets.blackYBWWFontF2, assets.blackYBWWBackF2],
         description: "Укороченный крой. Каждая футболка окрашена вручную (garment dye)",
         sizes: ["176 44", "182 46", "188 48", "194 50"],
         colors: ["Небесно-голубой", "Серо-фиолетовый"],
