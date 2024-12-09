@@ -4,7 +4,7 @@ import './Card.css';
 
 const Card = ({ image, name, id }) => {
     return (
-        <Link to={`/clothing/${id}`} className="product-card"> {/* Добавляем Link и передаем ID */}
+        <Link to={`/clothing/${id}`} className="product-card">
             <div className="product-image">
                 <img src={image} alt={name} />
             </div>

@@ -11,8 +11,8 @@
 }
 
 .product-image img {
-    width: 100%; /* Изображение занимает всю ширину карточки */
-    height: auto;
+    width: 800px; /* Изображение занимает всю ширину карточки */
+    height: 800px;
     object-fit: cover;
 }
 
@@ -28,8 +28,12 @@
     color: #000;
 }
 
-.product-status {
-    font-size: 18px; /* Увеличенный размер текста */
-    color: #777;
-    margin: 0;
+
+
+@media (max-width: 768px) {
+    .product-image img {
+        width: 100%; /* Изображение занимает всю ширину карточки */
+        height: auto;
+        object-fit: cover;
+    }
 }

@@ -14,12 +14,20 @@ import imagePodsharil from './podsharil.jpg';
 import image2YK from './2YK.jpg';
 import imageTrend from './trend.jpg';
 import blackYBWWBackF2 from './BlackYBWWBackF2.png';
+import blackYBWWBackF2White from './BlackYBWWBackF2White.png';
 import blackYBWWFontF2 from './BlackYBWWFrontF2.png';
+import blackYBWWFontF2White from './BlackYBWWFrontFWhite.png';
 import pengDenielsFront from './PengDenielsFront.png';
+import PengDenielsFrontWhite from './PengDenielsFrontWhite.png';
 import whiteYBWWFront from './WhiteYBWWFront.png';
+import WhiteYBWWFrontWhite from './WhiteYBWWFrontWhite.png';
 import imageRokiiBlue from './rokii_blue.jpg';
 
 export const assets = {
+    blackYBWWBackF2White,
+    PengDenielsFrontWhite,
+    blackYBWWFontF2White,
+    WhiteYBWWFrontWhite,
     whiteYBWWFront,
     blackYBWWBackF2,
     pengDenielsFront,

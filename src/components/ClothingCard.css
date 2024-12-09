@@ -56,21 +56,26 @@
 
 
 @media (max-width: 768px) {
-    /* Основной стиль для карточки */
+    .slider-button.left {
+        display: none;
+    }
+
+    .slider-button.right {
+        display: none;
+    }
     .clothing-card {
         display: flex;
-        flex-direction: row; /* Горизонтальное размещение на компьютере */
+        flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
         padding: 2rem;
         background-color: white;
-        max-width: 1000px; /* Ограничение ширины карточки на десктопе */
+        max-width: 1000px;
 
     }
 
-    /* Блок с изображением */
     .card-image {
-        flex: 1; /* Займёт половину ширины */
+        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -82,12 +87,11 @@
 
     }
 
-    /* Блок описания */
     .description {
         max-width: 100%;
-        top: 5vh;
+        top: 3vh;
         position: relative;
-        flex: 1; /* Займёт половину ширины */
+        flex: 1;
         text-align: left;
         font-size: 1rem;
         line-height: 1.6;

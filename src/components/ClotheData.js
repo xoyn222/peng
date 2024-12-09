@@ -4,7 +4,7 @@ const ClotheData = [
     {
         id: 1,
         name: "Что то там в рот вас Пенг Женская ",
-        imgdata: [assets.blackYBWWFontF2, assets.blackYBWWBackF2],
+        imgdata: [assets.blackYBWWBackF2White, assets.blackYBWWFontF2White],
         description: "Укороченный крой. Каждая футболка окрашена вручную (garment dye)",
         sizes: ["176 44", "182 46", "188 48", "194 50"],
         colors: ["Небесно-голубой", "Серо-фиолетовый"],
@@ -16,7 +16,7 @@ const ClotheData = [
     {
         id: 2,
         name: "Лонгслив-обманка Пенг «Подшарил»",
-        imgdata: [assets.imagePodsharil],
+        imgdata: [assets.PengDenielsFrontWhite],
         description: "Укороченный крой. Каждая футболка окрашена вручную (garment dye)",
         sizes: ["176 44", "182 46", "188 48", "194 50"],
         colors: ["Небесно-голубой", "Серо-фиолетовый"],
@@ -27,7 +27,7 @@ const ClotheData = [
     {
         id: 3,
         name: "Худи Пенг «Ахуенный тренд»",
-        imgdata: [assets.imageTrend],
+        imgdata: [assets.WhiteYBWWFrontWhite],
         description: "Капюшон с мехом. Кожаные детали. Укороченный и зауженный крой",
         sizes: ["176 44", "182 46", "188 48", "194 50"],
         colors: ["Графитно-чёрный", "Молочно-белый", "Орехово-коричневый"],
