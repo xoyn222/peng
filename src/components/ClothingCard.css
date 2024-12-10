@@ -56,6 +56,11 @@
 
 
 @media (max-width: 768px) {
+
+    .clothing-card {
+        height: 100vh;
+    }
+
     .slider-button.left {
         display: none;
     }

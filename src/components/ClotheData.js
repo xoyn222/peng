@@ -32,9 +32,10 @@ const ClotheData = [
         sizes: ["176 44", "182 46", "188 48", "194 50"],
         colors: ["Графитно-чёрный", "Молочно-белый", "Орехово-коричневый"],
         material: "Флис, кожа",
+        note: "Всего пара единиц на размер",
         tg: "https://t.me/peng0256information"
     },
-    {
+    /*{
         id: 4,
         name: "Лонгслив-обманка Пенг «Подшарил»",
         imgdata: [assets.imagePodsharil],
@@ -75,7 +76,7 @@ const ClotheData = [
         colors: ["Графитно-чёрный", "Молочно-белый", "Орехово-коричневый"],
         material: "Флис, кожа",
         tg: "https://t.me/peng0256information"
-    },
+    },/*/
 ];
 
 export default ClotheData;

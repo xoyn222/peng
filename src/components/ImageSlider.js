@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useSwipeable } from 'react-swipeable'; // Импортируем библиотеку
 import './ImageSlider.css';
 import images from './imageData';
 
@@ -38,8 +39,15 @@ const ImageSlider = () => {
         };
     }, []);
 
+    const swipeHandlers = useSwipeable({
+        onSwipedLeft: nextSlide,
+        onSwipedRight: prevSlide,
+        preventScrollOnSwipe: true,
+        trackTouch: true,
+    });
+
     return (
-        <div className="slider-container">
+        <div className="slider-container" {...swipeHandlers}>
             <div className="image-wrapper">
                 <img src={images[currentIndex].src} alt="" className="slider-image" />
                 <button className="slider-button left" onClick={prevSlide}>❮</button>
