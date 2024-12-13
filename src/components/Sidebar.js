@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './Sidebar.css';
 
-const Sidebar = ({ textColor }) => {
+const Sidebar = ({ textColor, isVideoPage }) => {
     const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const Sidebar = ({ textColor }) => {
             .replace(/,/g, '')
             .replace(/\./g, '')
             .replace(/\sг$/, '')
-            .replace(/(^|\\s)\\S/g, (l) => l.toUpperCase());
+            .replace(/(^|\s)\S/g, (l) => l.toUpperCase());
 
         return formattedDate;
     };
@@ -41,26 +41,46 @@ const Sidebar = ({ textColor }) => {
     };
 
     return (
-        <div className="sidebar" style={{ color: textColor }}>
+        <div className="sidebar">
             <div className="info">
                 <div className="info-links">
-                    <a href="https://t.me/peng0256" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href="https://t.me/peng0256"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: textColor }}
+                    >
                         t.me/peng0256
                     </a>
-                    <a href="https://instagram.com/peng0256.png" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href="https://instagram.com/peng0256.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: textColor }}
+                    >
                         inst/peng0256.png
                     </a>
                 </div>
-                <div className="info-pages">
-                    <a href="/" rel="noopener noreferrer">-главная</a>
-                    <a href="/shop" rel="noopener noreferrer">-предметы</a>
-                    <a href="/" rel="noopener noreferrer">-галерея</a>
+                <div
+                    className={`info-pages ${isVideoPage ? 'centered' : ''}`}
+                >
+                    <a href="/peng" rel="noopener noreferrer" style={{ color: textColor }}>
+                        -главная-
+                    </a>
+                    <a href="/shop" rel="noopener noreferrer" style={{ color: textColor }}>
+                        -предметы-
+                    </a>
+                    <a href="/" rel="noopener noreferrer" style={{ color: textColor }}>
+                        -галерея-
+                    </a>
                 </div>
             </div>
-            <div className="date">{formatDateTime(currentDateTime)} {formatTime(currentDateTime)}</div>
+            <div className="date" style={{ color: textColor }}>
+                <div>{formatDateTime(currentDateTime)}</div>
+                <div>{formatTime(currentDateTime)}</div>
+            </div>
         </div>
     );
 };
-
 
 export default Sidebar;

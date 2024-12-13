@@ -24,6 +24,8 @@ import WhiteYBWWFrontWhite from './WhiteYBWWFrontWhite.png';
 import imageRokiiBlue from './rokii_blue.jpg';
 import ahyennui from './ahyennui.jpg';
 
+import test2 from './test2.webm';
+
 export const assets = {
 
     blackYBWWBackF2White,
@@ -50,4 +52,5 @@ export const assets = {
     imagePodsharil,
     image2YK,
     imageTrend,
+    test2,
 };
