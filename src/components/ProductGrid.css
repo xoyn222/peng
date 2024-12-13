@@ -6,6 +6,7 @@
     width: 100vw; /* Занимает всю ширину экрана */
     max-width: 100%;
     box-sizing: border-box;
+
 }
 
 .product-grid a {

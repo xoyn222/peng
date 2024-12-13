@@ -16,7 +16,6 @@ const ClothingCard = ({ clothing }) => {
         setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
     };
 
-    // Обработчики свайпов
     const swipeHandlers = useSwipeable({
         onSwipedLeft: nextSlide,
         onSwipedRight: prevSlide,
