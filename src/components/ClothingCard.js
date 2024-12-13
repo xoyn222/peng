@@ -20,8 +20,8 @@ const ClothingCard = ({ clothing }) => {
     const swipeHandlers = useSwipeable({
         onSwipedLeft: nextSlide,
         onSwipedRight: prevSlide,
-        preventScrollOnSwipe: true, // Блокируем прокрутку во время свайпа
-        trackTouch: true, // Отслеживаем касания
+        preventScrollOnSwipe: true,
+        trackTouch: true,
     });
 
     return (
@@ -49,7 +49,18 @@ const ClothingCard = ({ clothing }) => {
                 </button>
 
                 <div className="details">
-                    {clothing.description && <div>{clothing.description}</div>}
+                    {clothing.description && (
+                        <div>
+                            <div className="description-title">Описание:</div>
+                            {Array.isArray(clothing.description) ? (
+                                clothing.description.map((desc, index) => (
+                                    <div key={index} className="description-item">{desc}</div>
+                                ))
+                            ) : (
+                                <div className="description-item">{clothing.description}</div>
+                            )}
+                        </div>
+                    )}
 
                     {clothing.sizes && (
                         <div>

@@ -43,9 +43,16 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="info">
-                <a href="https://t.me/peng0256" target="_blank" rel="noopener noreferrer">t.me/peng0256</a>
-                <a href="https://instagram.com/peng0256.png" target="_blank" rel="noopener noreferrer">inst/peng0256.png</a>
-                <a href="/shop" rel="noopener noreferrer">Предметы</a>
+                <div className="info-links">
+                    <a href="https://t.me/peng0256" target="_blank" rel="noopener noreferrer">t.me/peng0256</a>
+                    <a href="https://instagram.com/peng0256.png" target="_blank"
+                       rel="noopener noreferrer">inst/peng0256.png</a>
+                </div>
+                <div className="info-pages">
+                    <a href="/" rel="noopener noreferrer">-главная</a>
+                    <a href="/shop" rel="noopener noreferrer">-предметы</a>
+                    <a href="/" rel="noopener noreferrer">-галерея</a>
+                </div>
             </div>
             <div className="date">{formatDateTime(currentDateTime)} {formatTime(currentDateTime)}</div>
         </div>

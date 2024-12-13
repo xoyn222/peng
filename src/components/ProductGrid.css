@@ -1,8 +1,8 @@
 .product-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Две колонки с равной шириной */
-    gap: 20px; /* Отступы между карточками */
-    padding: 11.5vh 20px 20px;
+    gap: 1vw; /* Отступы между карточками */
+    padding: 7vw 1vw 10px;
     width: 100vw; /* Занимает всю ширину экрана */
     max-width: 100%;
     box-sizing: border-box;
@@ -13,7 +13,9 @@
 }
 
 @media (max-width: 768px) {
+
     .product-grid {
+        padding: 30vw 1vw 10px;
         grid-template-columns: 1fr; /* Одна колонка на мобильных устройствах */
     }
 }

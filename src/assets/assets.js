@@ -22,9 +22,12 @@ import PengDenielsFrontWhite from './PengDenielsFrontWhite.png';
 import whiteYBWWFront from './WhiteYBWWFront.png';
 import WhiteYBWWFrontWhite from './WhiteYBWWFrontWhite.png';
 import imageRokiiBlue from './rokii_blue.jpg';
+import ahyennui from './ahyennui.jpg';
 
 export const assets = {
+
     blackYBWWBackF2White,
+    ahyennui,
     PengDenielsFrontWhite,
     blackYBWWFontF2White,
     WhiteYBWWFrontWhite,

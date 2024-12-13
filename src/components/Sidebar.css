@@ -6,7 +6,7 @@
     position: relative;
     width: 100%;
     color: black;
-    font-size: 1vw;
+    font-size: 0.9vw;
     z-index: 1000;
 }
 
@@ -14,12 +14,24 @@
     position: absolute;
     top: 1.5vh;
     text-align: left;
-    font-size: 1.2vw;
+    font-size: 9vw;
+}
+
+.info-links  {
+    line-height: 1vh;
+    margin-bottom: 2vh;
+}
+
+.info-pages {
+    line-height: 1vh;
+}
+
+.info-pages a {
+    text-decoration: none;
 }
 
 .info a {
     color: black;
-    text-decoration: none;
     display: block;
     margin-bottom: 1vh;
 }
@@ -34,7 +46,7 @@
 
 @media (min-width: 1080px) {
     .sidebar {
-        font-size: 0.9vw;
+        font-size: 9vw;
     }
 
     .info {
@@ -58,16 +70,19 @@
     }
 
     .info {
+
         font-size: 0.9vw;
     }
 }
 
 @media (max-width: 768px) {
     .sidebar {
+
         font-size: 3vw;
     }
 
     .info {
+        left: 0.7vw;
         font-size: 3vw;
     }
     .date{
